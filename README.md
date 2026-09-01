@@ -14,8 +14,9 @@ Este README cobre apenas o que é específico do frontend.
 
 ## Stack
 
-- **Framework**: [Next.js](https://nextjs.org) (App Router)
+- **Framework**: [Next.js](https://nextjs.org) (App Router, `src/`)
 - **Linguagem**: TypeScript
+- **Estilo**: [Tailwind CSS](https://tailwindcss.com)
 - Consome a API Fastify do `SimplifyERP-backend` via HTTP
 
 ## Estrutura de páginas planejada (alinhada aos módulos do MVP)
@@ -27,8 +28,6 @@ Este README cobre apenas o que é específico do frontend.
 | Frente de Caixa (`/pdv`) | PDV | Painel interno de balcão para operadores do estabelecimento |
 
 ## Getting Started
-
-> O código-fonte ainda está sendo estruturado. Esta seção documenta o setup planejado para guiar a implementação inicial.
 
 ### Pré-requisitos
 
@@ -57,6 +56,8 @@ cp .env.example .env.local
 | `pnpm build` | Gera o build de produção |
 | `pnpm start` | Roda o frontend a partir do build de produção |
 | `pnpm lint` | Executa o linter |
+
+Scripts marcados como "planejados" já existem no `package.json` gerado pelo `create-next-app`, exceto os que ainda dependem de infraestrutura futura (ex.: testes end-to-end contra o backend).
 
 ## Repositório relacionado
 
